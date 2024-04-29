@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Billing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Restaurant Billing</h1><br>
+    <div class="menu">
+        <h1>STEAMED</h1><br>
+      <div class="item" onclick="addItem('IDLY', 26.00)">IDLY (₹26.00)</div>
+      <div class="item" onclick="addItem('IDIYAPPAM', 30.00)">IDIYAPPAM (₹30.00)</div>
+      <div class="item" onclick="addItem('PODI IDLY', 70.00)">PODI IDLY (₹70.00)</div>
+      <div class="item" onclick="addItem('GHEE IDLY', 80.00)">GHEE IDLY (₹80.00)</div>
+      <div class="item" onclick="addItem('CHILLI IDLY', 90.00)">CHILLI IDLY (₹90.00)</div>
+      <div class="item" onclick="addItem('PEPPER FRY IDLY', 90.00)">PEPPER FRY IDLY (₹90.00)</div>
+      <div class="item" onclick="addItem('GHEE PODI IDLY', 90.00)">GHEE PODI IDLY (₹90.00)</div>
+  <h1>TIFFIN</h1>
+  <div class="item" onclick="addItem('PONGAL', 50.00)">PONGAL (₹50.00)</div>
+      <div class="item" onclick="addItem('UTTHAPPAM', 50.00)">UTTHAPPAM (₹50.00)</div>
+      <div class="item" onclick="addItem('PLAIN DOSAI', 50.00)">PLAIN DOSAI (₹50.00)</div>
+      <div class="item" onclick="addItem('PODI DOSAI', 65.00)">PODI DOSAI (₹65.00)</div>
+      <div class="item" onclick="addItem('GARLIC PODI DOSAI', 65.00)">GARLIC PODI DOSAI (₹65.00)</div>
+      <div class="item" onclick="addItem('SPL DOSAI', 65.00)">SPL DOSAI (₹65.00)</div>
+      <div class="item" onclick="addItem('RAVAA DOSAI', 65.00)">RAVAA DOSAI (₹65.00)</div>
+      <div class="item" onclick="addItem('MASALA DOSAI', 65.00)">MASALA DOSAI (₹65.00)</div>
+      <div class="item" onclick="addItem('ONION DOSAI', 65.00)">ONION DOSAI (₹65.00)</div>
+      <div class="item" onclick="addItem('ONION UTTHAPPAM', 65.00)">ONION UTTHAPPAM (₹65.00)</div>
+      <div class="item" onclick="addItem('GHEE ROAST', 85.00)">GHEE ROAST (₹85.00)</div>
+      <div class="item" onclick="addItem('ROCKET DOSAI', 90.00)">ROCKET DOSAI (₹90.00)</div>
+      <div class="item" onclick="addItem('PANEER MAS DOSAI', 100.00)">PANEER MAS DOSAI (₹100.00)</div>
+      <div class="item" onclick="addItem('MUSH MAS DOSAI', 100.00)">MUSH MAS DOSAI (₹100.00)</div>
+     <br>
+      <h1>RICE AND BREAD</h1><br>
+      <div class="item" onclick="addItem('TOMATO RICE', 50.00)">TOMATO RICE (₹50.00)</div>
+      <div class="item" onclick="addItem('LEMON RICE', 50.00)">LEMON RICE (₹50.00)</div>
+      <div class="item" onclick="addItem('CURD RICE', 50.00)">CURD RICE (₹50.00)</div>
+      <div class="item" onclick="addItem('SAMBAR RICE', 60.00)">SAMBAR RICE (₹60.00)</div>
+      <div class="item" onclick="addItem('VEG BIRYANI', 60.00)">VEG BIRYANI (₹60.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM BIRYANI', 70.00)">MUSHROOM BIRYANI (₹70.00)</div>
+      <div class="item" onclick="addItem('POORI', 50.00)">POORI (₹50.00)</div>
+      <div class="item" onclick="addItem('PAROTTA', 50.00)">PAROTTA (₹50.00)</div>
+      <div class="item" onclick="addItem('CHAPPATHI', 50.00)">CHAPPATHI (₹50.00)</div>
+      <div class="item" onclick="addItem('CHOLA POORI', 60.00)">CHOLA POORI (₹60.00)</div>
+      <div class="item" onclick="addItem('CHILLI PAROTTA', 90.00)">CHILLI PAROTTA (₹90.00)</div>
+      <div class="item" onclick="addItem('VEG KOTHU PAROTTA', 90.00)">VEG KOTHU PAROTTA (₹90.00)</div>
+      <div class="item" onclick="addItem('PANEER KOTHU', 100.00)">PANEER KOTHU (₹100.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM KOTHU', 100.00)">MUSHROOM KOTHU (₹100.00)</div>
+      <div class="item" onclick="addItem('VEG KAIMA PAROTTA', 110.00)">VEG KAIMA PAROTTA (₹110.00)</div>
+      <div class="item" onclick="addItem('PANEER KAIMA', 110.00)">PANEER KAIMA (₹110.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM KAIMA', 110.00)">MUSHROOM KAIMA (₹110.00)</div>
+    <h1>CHINESE</h1>
+    <div class="item" onclick="addItem('JEERA RICE', 80.00)">JEERA RICE (₹80.00)</div>
+    <div class="item" onclick="addItem('VEG NOODLES', 90.00)">VEG NOODLES (₹90.00)</div>
+    <div class="item" onclick="addItem('PANEER NOODLES', 100.00)">PANEER NOODLES (₹100.00)</div>
+    <div class="item" onclick="addItem('MUSHROOM NOODLES', 100.00)">MUSHROOM NOODLES (₹100.00)</div>
+    <div class="item" onclick="addItem('SCHEZWAN NOODLES', 100.00)">SCHEZWAN NOODLES (₹100.00)</div>
+    <div class="item" onclick="addItem('SEZ PANEER NOODLES', 110.00)">SEZ PANEER NOODLES (₹110.00)</div>
+    <div class="item" onclick="addItem('SEZ MUSHROOM NOODLES', 110.00)">SEZ MUSHROOM NOODLES (₹110.00)</div>
+    <div class="item" onclick="addItem('VEG FRIED RICE', 90.00)">VEG FRIED RICE (₹90.00)</div>
+    <div class="item" onclick="addItem('MUSHROOM FRIED RICE', 100.00)">MUSHROOM FRIED RICE (₹100.00)</div>
+    <div class="item" onclick="addItem('PANEER FRIED RICE', 100.00)">PANEER FRIED RICE (₹100.00)</div>
+    <div class="item" onclick="addItem('SCHEZWAN FRIED RICE', 100.00)">SCHEZWAN FRIED RICE (₹100.00)</div>
+    <div class="item" onclick="addItem('SEZ PANEER RICE', 110.00)">SEZ PANEER RICE (₹110.00)</div>
+    <div class="item" onclick="addItem('SEZ MUSHROOM RICE', 110.00)">SEZ MUSHROOM RICE (₹110.00)</div>
+    
+    <h1>GRAVY</h1>
+    <div class="item" onclick="addItem('PANEER BUTTER MASALA', 110.00)">PANEER BUTTER MASALA (₹110.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM MASALA', 110.00)">MUSHROOM MASALA (₹110.00)</div>
+      <div class="item" onclick="addItem('GOBI MASALA', 110.00)">GOBI MASALA (₹110.00)</div>
+      <div class="item" onclick="addItem('CHANNA MASALA', 110.00)">CHANNA MASALA (₹110.00)</div>
+      <div class="item" onclick="addItem('PANEER MANCHURIAN', 120.00)">PANEER MANCHURIAN (₹120.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM MANCHURIAN', 120.00)">MUSHROOM MANCHURIAN (₹120.00)</div>
+      <div class="item" onclick="addItem('GOBI MANCHURIAN', 120.00)">GOBI MANCHURIAN (₹120.00)</div>
+      <div class="item" onclick="addItem('MIXED VEG MASALA', 120.00)">MIXED VEG MASALA (₹120.00)</div>
+
+    <h1>SNACKS</h1>
+    <div class="item" onclick="addItem('VADAI', 08.00)">VADAI (₹8.00)</div>
+      <div class="item" onclick="addItem('SAMOSA', 10.00)">SAMOSA (₹10.00)</div>
+      <div class="item" onclick="addItem('KESARI', 20.00)">KESARI (₹20.00)</div>
+      <div class="item" onclick="addItem('SAMBAR VADAI', 25.00)">SAMBAR VADAI (₹25.00)</div>
+      <div class="item" onclick="addItem('WATER BOTTLE', 20.00)">WATER BOTTLE (₹20.00)</div>
+      <div class="item" onclick="addItem('GOBI 65', 80.00)">GOBI 65 (₹80.00)</div>
+      <div class="item" onclick="addItem('PANEER 65', 90.00)">PANEER 65 (₹90.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM 65', 90.00)">MUSHROOM 65 (₹90.00)</div>
+      <div class="item" onclick="addItem('PANEER MANCHURIAN', 110.00)">PANEER MANCHURIAN (₹110.00)</div>
+      <div class="item" onclick="addItem('MUSHROOM MANCHURIAN', 110.00)">MUSHROOM MANCHURIAN (₹110.00)</div>
+      <div class="item" onclick="addItem('GOBI MANCHURIAN', 110.00)">GOBI MANCHURIAN (₹110.00)</div>
+      
+      <h2>Milkshakes</h2>
+   
+        <div class="item card" onclick="addItem('CHOCOLATE MILKSHAKE', 70.00)">CHOCOLATE MILKSHAKE (₹70.00)</div>
+        <div class="item card" onclick="addItem('VANILLA MILKSHAKE', 70.00)">VANILLA MILKSHAKE (₹70.00)</div>
+        <div class="item card" onclick="addItem('STRAWBERRY MILKSHAKE', 70.00)">STRAWBERRY MILKSHAKE (₹70.00)</div>
+        <div class="item card" onclick="addItem('BUTTERSCOTCH MILKSHAKE', 80.00)">BUTTERSCOTCH MILKSHAKE (₹80.00)</div>
+        <div class="item card" onclick="addItem('BLACKCURRANT MILKSHAKE', 80.00)">BLACKCURRANT MILKSHAKE (₹80.00)</div>
+        <div class="item card" onclick="addItem('BLUE CURACAO MILKSHAKE', 80.00)">BLUE CURACAO MILKSHAKE (₹80.00)</div>
+        <div class="item card" onclick="addItem('GREEN APPLE MILKSHAKE', 80.00)">GREEN APPLE MILKSHAKE (₹80.00)</div>
+    
+      <h2>Beverages</h2>
+   
+        <div class="item card" onclick="addItem('LEMON SODA', 30.00)">LEMON SODA (₹30.00)</div>
+        <div class="item card" onclick="addItem('ROSE MILK', 40.00)">ROSE MILK (₹40.00)</div>
+        <div class="item card" onclick="addItem('LASSI', 40.00)">LASSI (₹40.00)</div>
+        <div class="item card" onclick="addItem('JIGARTHANDA', 60.00)">JIGARTHANDA (₹60.00)</div>
+        <div class="item card" onclick="addItem('LEMON', 20.00)">LEMON (₹20.00)</div>
+        <div class="item card" onclick="addItem('WATERMELON', 35.00)">WATERMELON (₹35.00)</div>
+        <div class="item card" onclick="addItem('PINEAPPLE', 40.00)">PINEAPPLE (₹40.00)</div>
+        <div class="item card" onclick="addItem('GRAPE', 40.00)">GRAPE (₹40.00)</div>
+        <div class="item card" onclick="addItem('MUSKMELON', 45.00)">MUSKMELON (₹45.00)</div>
+        <div class="item card" onclick="addItem('APPLE', 60.00)">APPLE (₹60.00)</div>
+        <div class="item card" onclick="addItem('MANGO', 60.00)">MANGO (₹60.00)</div>
+        <div class="item card" onclick="addItem('SWEET LIME', 70.00)">SWEET LIME (₹70.00)</div>
+        <div class="item card" onclick="addItem('POMEGRANATE', 70.00)">POMEGRANATE (₹70.00)</div>
+        <div class="item card" onclick="addItem('ORANGE', 80.00)">ORANGE (₹80.00)</div>
+   
+    </div>
+    <div id="bill">
+      <h2>Bill</h2>
+      <ul id="billItems">
+      </ul>
+      <div class="total" id="total">Total: ₹0.00</div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
